@@ -1,0 +1,281 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: block;
+    font-family: "Avenir", sans-serif;
+    background-image: url('./bg.png');
+    background-size: cover;
+}
+
+.block{
+    margin-bottom: 10px;
+}
+
+.topheader{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px;
+    background-color: #ffffff;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.left, .right{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+
+.box{
+    border-radius: 6px;
+    background-color: #0073ff;
+    display: flex;
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+}
+
+.circle{
+    border-radius: 50px;
+    background-color: #0073ff;
+    display: flex;
+    padding: 0.5rem;
+    color: white;
+}
+
+
+.secondheader{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    gap: 20px;
+}
+
+.stepper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.num{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #d3dce9;
+    color: #bec6d1;
+    font-size: 1.1rem;
+}
+
+.text {
+    font-size: 0.8rem;
+    color: black;
+    display: inline;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.active .num, .active-dot {
+    background-color: #0073ff;
+    color: white;
+}
+
+.active .text {
+    font-weight: bold;
+    color:  #0073ff;
+}
+
+.container {
+    margin-top: 10px;
+ }
+
+/*Design*/
+.boxmodel{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px 80px;
+    height: 380px;
+    overflow: auto;
+    
+}
+
+label{
+    margin-top: 10px;
+}
+
+.h3text{
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.field-group{
+    margin-top: 30px;
+    padding: 10px;
+    width: 100%;
+}
+
+input, select{
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 10px;
+    border: 1px solid #d3dce9;
+    color:  #d3dce9;
+}
+
+::placeholder{
+    color:  #d3dce9;
+}
+
+ /* address container*/
+
+.textarea{
+    
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid #d3dce9;
+}
+ 
+.continue{
+    background-color:  #0073ff;
+    color: white;
+}
+
+.property-info{
+    display: flex;
+    justify-content: space-between;
+}
+.property-info, .address-info{
+    
+    margin-top: 20px;
+}
+
+.input{
+    width: 32%; 
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 6%;
+}
+
+::-webkit-scrollbar-track {
+    background: #fcfcfc;
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background:#eeeff0;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:#eeeff0;
+}
+
+
+ /* Upload files container*/
+.fileupload{
+    
+    border: 1px dashed #d3dce9;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    background-color: white;
+    padding: 10px; 
+    border-top: 1px solid #d3dce9;
+}
+
+button {
+    border-style: none;
+}
+
+.back, .continue{
+    height: 30px;
+    width: 90px;
+    gap: 0.5rem;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 20px;
+}  
+
+@media only screen and (max-width: 600px) {
+    .block {
+        width: 100%;
+        padding: 0;
+        font-size: small;
+    }
+
+    .topheader {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .left, .right {
+        transform: scale(0.9);
+        gap: 3px;
+    }
+
+    .secondheader {
+        padding: 20px 10px;
+        gap: 10px;
+    }
+
+    .boxmodel {
+        flex-direction: column;
+        width: 100%;
+        margin: 10px;
+        height: auto;
+    }
+
+    .containcontent {
+        padding: 15px 10px; 
+    }
+
+    .input, .fileupload, .textarea {
+        width: 100%;
+    }
+
+    .fileupload, .textarea {
+        margin-right: auto;
+    }
+
+    span {
+        font-size: small;
+    }
+
+    .stepper {
+        width: 100px;
+        height: 100px;
+    }
+}
